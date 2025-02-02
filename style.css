@@ -1,0 +1,73 @@
+.video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.Phon{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.text-animation{
+    font-size: 60px;
+    position: absolute;
+    animation: move 10s linear infinite;
+    color: green;
+}
+@keyframes move{
+    0%{
+        transform: translateX(0) translateY(0);
+      }
+    25%{
+        transform: translateX(1215px) translateY(0);
+        color: red;
+       
+    }
+    50%{
+        transform: translateX(1215px) translateY(625px);
+        color: black;
+       
+    }
+    75%{
+        transform: translateX(0) translateY(625px);
+        color: white;
+        
+    }
+    100%{
+        transform: translateX(0) translateY(0);
+        
+    }
+}
+.Bmw{
+    height: 100px;
+    width: 100px;
+    border: 10px double ;
+    background-color: lawngreen;
+
+}
+.bmw{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    animation: bmwL 2s linear infinite;
+    
+}
+@keyframes bmwL{
+    0%{
+        transform: scale(1);
+        
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+     
+    }
+    
+}
